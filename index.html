@@ -7,17 +7,23 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
+            <a id="top"></a>
             <h1>
             This is my frontend sheet!
             </h1>
             <p>
-            To be continue..
+            <ol>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#example">Examples</a></li>
+            </ol>
             </p>
             <img src="./images/HTML5_logo_and_wordmark.svg" alt="html logo" height="200" width="200">
             <img src="./images/css-3-logo.png" alt="css logo" height="200" width="200">
             <img src="./images/Unofficial_JavaScript_logo_2.svg" alt="Java Script logo" height="200" width="200">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code logo" height="200" width="200">
-            <h2>HTML</h2>
+            <h2 id="html">HTML</h2>
             HTML tags
             <ul>
                 <li>&lt;strong&gt; - tag is used to define text with strong importance. The content inside is typically displayed in bold.<br>Use the &lt;b&gt; tag to specify bold text without any extra importance!</li>
@@ -54,7 +60,18 @@
                 <dd>a set of data that describes and gives information about other data.</dd>
             </dl>
 
-            <h4>Basic HTML document structure</h4>
+            <h3 id="audio">Audio</h3>
+            <audio controls>
+                <source src="./music.wav">
+            </audio>
+
+            <h3 id="video">Video</h3>
+            <video width="600" controls>
+                <source src="./mountains.webm">
+            <p>Your browser doesn't support this element</p>
+            </video>
+
+            <h4 id="example">Basic HTML document structure</h4>
             <pre>
                 &lt;!DOCTYPE&gt;
                 &lt;html&gt;
@@ -76,4 +93,4 @@
         </body>
     </html>
 
-    
+    <p><a href="#top">Back on top</a></p>
