@@ -4,6 +4,7 @@
             <title>Frontend Sheet</title>
             <meta charset="utf-8">
             <meta name="author" content="Mladen Božić">
+            <meta name="description" content="width=device-width, initial scale=1">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
@@ -13,18 +14,36 @@
             This is my frontend sheet!
             </h1>
             <p>
-            <ol>
-                <li><a href="#html">HTML</a></li>
-                <li><a href="#audio">Audio</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#example">Examples</a></li>
-            </ol>
+                Everything I learn on my class will be written here!<br>
+                <a href="https://github.com/mbozic34" target="_blank">GitHub profile</a><br>
+                <a href="mailto:mbozic@example.com">Email</a><br>
+                <a href="tel:+123456789">Phone</a><br>
+                <ol>
+                    <li><a href="#structure">Document structure</a></li>
+                    <li>Text formatting
+                      <ul>
+                        <li>Headings</li>
+                        <li>Paragraphs and words</li>
+                      </ul>
+                    </li>
+                      <li>Media
+                        <ul>
+                          <li><a href="#image">Image</a></li>
+                          <li><a href="#audio">Audio</a></li>
+                          <li><a href="#video">Video</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#example">Examples</a></li>
+                  </ol>
             </p>
             <a href="https://google.com" target="_blank"><img src="./images/HTML5_logo_and_wordmark.svg" alt="html logo" height="200" width="200"></a>
             <img src="./images/css-3-logo.png" alt="css logo" height="200" width="200">
             <img src="./images/Unofficial_JavaScript_logo_2.svg" alt="Java Script logo" height="200" width="200">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code logo" height="200" width="200">
             <h2 id="html">HTML</h2>
+
+        
+
             HTML tags
             <ul>
                 <li>&lt;strong&gt; - tag is used to define text with strong importance. The content inside is typically displayed in bold.<br>Use the &lt;b&gt; tag to specify bold text without any extra importance!</li>
@@ -47,7 +66,7 @@
                 <li>The vast majority of tags must be opened (&lt;tag&gt;) and closed (&lt;tag&gt;) with the element information such as a title or text resting between the tags</li>
                 <li>When using multiple tags, the tags must be closed in the order in which they were opened</li>
             </ul>
-            <h3>Basic structure of an HTML document</h3>
+            <h3 id="structure">Basic structure of an HTML document</h3>
             <ol>
                 <li>html</li>
                 <li>head</li>
@@ -70,7 +89,8 @@
             <video width="600" controls>
                 <source src="./mountains.webm">
             <p>Your browser doesn't support this element</p>
-            </video>
+            </video><br>
+            <a id="image"><img src="./images/sheldon-papers.gif" alt="throwing papers" height="200" width="400"></a>
 
             <h4 id="example">Basic HTML document structure</h4>
             <pre>
@@ -89,9 +109,70 @@
             <circle cx="160" cy="70" r="20" fill="blue"></circle>
             <circle cx="90" cy="70" r="20" fill="blue"></circle>
             </svg><br>
-            <img src="./images/sheldon-papers.gif" alt="throwing papers" height="200" width="400">
-
+            <h4>Tables</h4>
+            <table border="1">
+                <caption style="text-align: center;">Raspored sati</caption>
+                <thead>
+                <tr>
+                    <td>Sat</td>
+                    <td>Ponedjeljak</td>
+                    <td>Utorak</td>
+                    <td>Srijeda</td>
+                    <td>Četvrtak</td>
+                    <td>Petak</td>
+                </tr>
+                </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Povijest</td>
+                    <td>Geografija</td>
+                    <td>Engleski</td>
+                    <td>Engleski</td>
+                    <td>Fizika</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Matematika</td>
+                    <td rowspan="2">Kemija</td>
+                    <td>Fizika</td>
+                    <td>Fizika</td>
+                    <td>Hrvatski</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hrvatski</td>
+                    <td>Informatika</td>
+                    <td>Matematika</td>
+                    <td>Geografija</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Glazbeni</td>
+                    <td>Hrvatski</td>
+                    <td>Informatika</td>
+                    <td>Matematika</td>
+                    <td>Povijest</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td rowspan="2">Matematika</td>
+                    <td>Povijest</td>
+                    <td>TZK</td>
+                    <td>Likovni</td>
+                    <td>Biologija</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Biologija</td>
+                    <td>TZK</td>
+                    <td>TZK</td>
+                    <td>Psihologija</td>
+                </tr>
+            </tbody>
+            </table>
+            <p><a href="#top">Back to top</a></p>
         </body>
     </html>
 
-    <p><a href="#top">Back on top</a></p>
+    
