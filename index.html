@@ -298,6 +298,36 @@
             <button type="submit">Sign me up</button>
         </form>
 
+        <h5>Food order form</h5>
+        <form action="">
+            <label>Full name&nbsp;<input type="text" placeholder="Full name" required></label><br>
+            <label>Phone number&nbsp;<input type="tel" placeholder="Phone number" required></label><br>
+            <label>Address&nbsp;<input type="text" placeholder="Address" required></label><br>
+            <label>Delivery Time&nbsp;<input type="time" name="appt" min="08:00" max="20:00" required></label><br>
+            <label>Order&nbsp;<input list="food-recommendations-list" type="text" required></label>
+            <datalist id="food-recommendations-list">
+                <option>Hamburger</option>
+                <option>Pizza</option>
+                <option>Wrap</option>
+                <option>Palenta</option>
+                <option>Zagrebački odrezak</option>
+            </datalist><br>
+            <label>Extras&nbsp;<input list="drinks" type="text"></label>
+            <datalist id="drinks">
+                <option>Coca-Cola</option>
+                <option>Fanta</option>
+                <option>Pivo</option>
+                <option>Cedevita</option>
+                <option>Sprite</option>
+            </datalist><br>
+            <label>Contactless delivery:&nbsp;</label>
+            <label><input type="radio" name="contactless_delivery" value="1">Yes</label>
+            <label><input type="radio" name="contactless_delivery" value="2">No</label><br>
+            <label>Comment:&nbsp;</label><br>
+            <textarea name="comment" maxlength="250" ></textarea><br>
+            <button>Submit order</button>
+        </form>
+
         <p><a href="#top">Back to top</a></p>
     </html>
 
